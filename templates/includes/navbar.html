@@ -19,14 +19,16 @@
                
         <a class="nav-item nav-link" href="/user/register">Kayıt Ol</a>
       </div>
-      <p>
-        
-        {% if request.user.is_authenticated %}
-            Giriş Yapılmış, {{request.user.username}}
-          {% else %}
-            Giriş Yapılmamış
-        {% endif %}
-          
-      </p>
+    
     </div>
+   
   </nav>
+  <p>
+        
+    {% if request.user.is_authenticated %}
+        Giriş Yapılmış, {{request.user.username}}
+      {% else %}
+        Giriş Yapılmamış
+    {% endif %}
+      
+  </p>
